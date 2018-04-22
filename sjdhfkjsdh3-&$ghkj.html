@@ -1,0 +1,59 @@
+<% include ../partials/datalayer %>
+<% include ../partials/head %>
+<% include ../partials/topnavbar %>
+
+<script type="text/javascript" src="../scripts/dropzone.js"></script>
+<link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+<script type="text/javascript" src="../scripts/dropzone_customizations.js"></script>
+
+
+<body data-spy="scroll" data-target="#tocnav" data-offset="80">
+
+<div class="container">
+<div class="page-header">
+  <h1>Exam Data Files and Submission DropBox
+</div>
+
+<div class="row">
+	<div class="col-md-8">
+	<main id="content" class="content" role="main">
+		<article class="post tag-test tag-content">
+			<section class="post-content">
+
+
+
+				<div id="practice-exercise-part6a">
+				<h2 class="hasAnchor">
+					<a href="#practice-exercise-part6a" class="anchor"></a>
+					Data Files
+				</h2>
+
+				<ul>
+					<li> <a href="dataFile_exam.docx" target="_blank">Data File</a></li>
+					<li><a href="logo.png" target="_blank">Logo Image</a></li>
+					
+				</ul>
+
+				<h3 class="hasAnchor">
+					<a href="#tasks-and-steps" class="anchor"></a>
+					Submit your File Here
+				</h3>
+					
+					<form method="post" action="/upload" class="dropzone" id="word-exam-dropzone">
+						<div class="fallback">
+							<input name="file" type="file" multiple />
+						</div>
+						<input type="hidden" value="word" name="program" />
+						<input type="hidden" value="e1" name="exercise" />
+						
+					</form>
+
+				</div>
+</div>
+</div>
+
+<% include ../partials/footer %>
+
+</body>
+
+</html>
